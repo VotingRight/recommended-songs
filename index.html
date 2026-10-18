@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prohibited Songs</title>
+    <title>Recommended Songs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,9 +13,26 @@
             color: #333;
             line-height: 1.6;
         }
-        h1 {
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
             border-bottom: 2px solid #ccc;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .sister-site {
+            font-size: 0.95rem;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .sister-site:hover {
+            text-decoration: underline;
         }
         ul {
             list-style-type: disc;
@@ -29,14 +46,18 @@
 </head>
 <body>
 
-    <h1>Recommended Songs</h1>
-	<ul>
-		<li>Demi Lovato - Fast</li>
-		<li>Europe - The Final Countdown</li>
-		<li>Michael Jackson - They Don't Care About Us</li>
-		<li>Selena Gomez - Slow Down</li>
-		<li>Shakira - Whenever, Wherever</li>
-	</ul>
+    <div class="header-container">
+        <h1>Recommended Songs</h1>
+        <a href="https://interdite.ca" class="sister-site" target="_blank" rel="noopener noreferrer">List of Prohibited Songs</a>
+    </div>
+    
+    <ul>
+        <li>Demi Lovato - Fast</li>
+        <li>Europe - The Final Countdown</li>
+        <li>Michael Jackson - They Don't Care About Us</li>
+        <li>Selena Gomez - Slow Down</li>
+        <li>Shakira - Whenever, Wherever</li>
+    </ul>
 
 </body>
 </html>
